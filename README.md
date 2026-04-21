@@ -11,35 +11,30 @@ compared by chaining through items it has seen. Measures two classic signatures:
 - **Symbolic Distance Effect**: accuracy rises with rank distance between items
 - **Terminal Item Effect**: endpoint items are easier than interior pairs
 
-### List Linking (LL)
-Two separate 4-item ranked lists are learned independently. A single linking
-probe (D > E) connects them. Tests whether the model can infer cross-list
-rankings requiring multi-step inference through the probe link.
-
 ### Learnability — Reward yoking design
-Two interleaved 5-item stimulus sets. Learnable (L) items have a consistent
-hidden ranking. Unlearnable (U) items use the PN schedule: reward probability
-yoked to the rolling mean of recent L outcomes, equating average feedback while
+Two interleaved 5-item stimulus sets. **Learnable (L)** stimuli have a **consistent
+hidden ranking**. **Unlearnable (U)** stimuli have **random feedback indepedent of choice**: reward probability
+yoked to the rolling mean of recent 10 L outcomes, equating average feedback while
 removing any learnable structure. Key metric: **OP discrimination** = OP_L − OP_U
-(slope of choose_frequency ~ item_rank). A negative OP_disc means the model
+(slope of choose_frequency/stimulus ~ item_rank). A negative OP_disc (<-0.1) means the model
 correctly distinguishes learnable from unlearnable stimulus structure.
 
-## Background
-
+## Reference
 Tasks are adapted from:
 - Monkey dACC electrophysiology experiments on learnability signals
-- Plastic RNN (RetroModulRNN) superstitious learning simulations
-- Classical transitive inference and list-linking paradigms from comparative cognition
+  Jin, Y., Jensen, G., Gottlieb, J., & Ferrera, V. (2022). Superstitious learning of abstract order from random reinforcement. Proceedings of the National Academy of Sciences, 119(35), e2202789119. https://doi.org/10.1073/pnas.2202789119
+  Jin, Y., Jensen, G., Ferrera, V., & Gottlieb, J. (2025). Single-neuron encoding of learnability in the dorsal anterior cingulate cortex. bioRxiv. https://doi.org/10.1101/2025.09.29.679390
+
+- For any more questions, reach out to yj2525@columbia.edu/leoyuhaojin@gmail.com
 
 ## Kaggle Benchmark
 
-[Link to Kaggle benchmark] <!-- add your benchmark URL here -->
+[Link to Kaggle benchmark] <!-- https://www.kaggle.com/competitions/kaggle-measuring-agi/writeups/https -->
 
 ## Files
 
 | File | Description |
 |---|---|
-| `task_ti_sde_tie.py` | Transitive inference — SDE + TIE combined |
-| `task_list_linking.py` | List linking — non-probe cross-list inference |
-| `task_learnability_pn.py` | Learnability task — PN schedule, OP discrimination |
+| `benchmark-task-transitive-inference.py` | Transitive inference — SDE + TIE combined |
+| `benchmark-task-learnability.py` | Learnability task — PN schedule, OP discrimination |
 | `benchmark_writeup.md` | Full task descriptions and metric explanations |
