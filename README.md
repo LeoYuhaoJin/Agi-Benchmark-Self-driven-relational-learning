@@ -53,6 +53,6 @@ https://www.kaggle.com/competitions/kaggle-measuring-agi/writeups/https
 
 | File | Description |
 |---|---|
-| `benchmark-task-transitive-inference.py` | Transitive inference — SDE + TIE combined, help by Vivian Peng @vivianpengdev|
-| `benchmark-task-learnability.py` | Learnability task — PN schedule, OP discrimination, help by Vivian Peng |
-| `benchmark_writeup.md` | Full task descriptions and metric explanations |
+| `benchmark-task-transitive-inference.ipynb` | Transitive inference — SDE + TIE combined, contributed by Vivian Peng @vivianpengdev|
+| `benchmark-task-learnability.ipynb` | Learnability task — PN schedule, OP discrimination, contributed by Leo Yuhao Jin and Vivian Peng |
+| `ARISE_Benchmark.pdf` | Full task descriptions and metric explanations |
