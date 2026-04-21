@@ -1,10 +1,11 @@
-# Agi-Benchmark-Self-driven-relational-learning# Cognitive AGI Benchmark
+# ARISE Automatic-Relational-Inference-Structural-Evaluation
 
-A Kaggle Community Benchmark measuring structured reasoning and learnability
-in AI models, adapted from primate and computational neuroscience paradigms.
+A Cognitive-AGI Benchmark measuring structured reasoning and learnability
+in AI models (Gemini,Claude,GPT, Deepseek), inspired by cognitive and computational neuroscience
+
+Ran in Kaggle/local python notebook
 
 ## Tasks
-
 ### Transitive Inference (TI)
 Tests whether a model can infer the relative rank of two items never directly
 compared by chaining through items it has seen. Measures two classic signatures:
@@ -22,19 +23,20 @@ correctly distinguishes learnable from unlearnable stimulus structure.
 ## Reference
 Tasks are adapted from:
 - Monkey dACC electrophysiology experiments on learnability signals
-  Jin, Y., Jensen, G., Gottlieb, J., & Ferrera, V. (2022). Superstitious learning of abstract order from random reinforcement. Proceedings of the National Academy of Sciences, 119(35), e2202789119. https://doi.org/10.1073/pnas.2202789119
-  Jin, Y., Jensen, G., Ferrera, V., & Gottlieb, J. (2025). Single-neuron encoding of learnability in the dorsal anterior cingulate cortex. bioRxiv. https://doi.org/10.1101/2025.09.29.679390
+  * Jin, Y., Jensen, G., Gottlieb, J., & Ferrera, V. (2022). Superstitious learning of abstract order from random reinforcement. Proceedings of the National Academy of Sciences, 119(35), e2202789119. https://doi.org/10.1073/pnas.2202789119
+  
+  * Jin, Y., Jensen, G., Ferrera, V., & Gottlieb, J. (2025). Single-neuron encoding of learnability in the dorsal anterior cingulate cortex. bioRxiv. https://doi.org/10.1101/2025.09.29.679390
 
 - For any more questions, reach out to yj2525@columbia.edu/leoyuhaojin@gmail.com
 
 ## Kaggle Benchmark
 
-[Link to Kaggle benchmark] <!-- https://www.kaggle.com/competitions/kaggle-measuring-agi/writeups/https -->
+https://www.kaggle.com/competitions/kaggle-measuring-agi/writeups/https
 
 ## Files
 
 | File | Description |
 |---|---|
-| `benchmark-task-transitive-inference.py` | Transitive inference — SDE + TIE combined |
-| `benchmark-task-learnability.py` | Learnability task — PN schedule, OP discrimination |
+| `benchmark-task-transitive-inference.py` | Transitive inference — SDE + TIE combined, help by Vivian Peng @vivianpengdev|
+| `benchmark-task-learnability.py` | Learnability task — PN schedule, OP discrimination, help by Vivian Peng |
 | `benchmark_writeup.md` | Full task descriptions and metric explanations |
