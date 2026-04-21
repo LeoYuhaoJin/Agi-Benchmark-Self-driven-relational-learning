@@ -3,7 +3,7 @@
 A Cognitive-AGI Benchmark measuring structured reasoning and learnability
 in AI models (Gemini,Claude,GPT, Deepseek), inspired by cognitive and computational neuroscience
 
-Ran in Kaggle/local python notebook
+Run in Kaggle/local python notebook
 
 ## Tasks
 ### Transitive Inference (TI)
